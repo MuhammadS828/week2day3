@@ -17,8 +17,8 @@ const soldier = {
     }
   },
   recharge: function () {
-    this.weapon.cartridges = 30;
     if (this.supplies !== 0) {
+      this.weapon.cartridges = 30;
       this.supplies--;
       console.log("перезарядка");
     }

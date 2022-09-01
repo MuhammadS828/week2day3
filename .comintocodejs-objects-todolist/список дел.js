@@ -20,7 +20,7 @@ const todoList = {
 
   printAll: function () {
     for (let i = 0; i < this.items.length; i++) {
-      console.log(this.print(i));
+      this.print(i);
     }
   },
 
@@ -38,7 +38,8 @@ const todoList = {
   print: function (index) {
     if (this.items[index].completed === true) {
       console.log(`[x] ${this.items[index].text}`);
-    } else {
+    } 
+    if(this.items[index].completed === false) {
       console.log(`[] ${this.items[index].text}`);
     }
   },
